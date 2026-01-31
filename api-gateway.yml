@@ -4,6 +4,11 @@ server:
 spring:
   cloud:
     gateway:
+      routes:
+        - id: auth-management
+          uri: lb://AUTH-MANAGEMENT
+          predicates:
+            - path=/api/auth/register
       discovery:
         locator:
           enabled: true
@@ -26,3 +31,4 @@ data:
 jwt:
   secret: mySampleSecureSecretKeyCombinationHere
   expiration: 600000 # 10mins
+
