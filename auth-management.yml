@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/freedom_banking_auth
-    username: root
-    password: root
+    username: sharath
+    password: sharath
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     properties:
