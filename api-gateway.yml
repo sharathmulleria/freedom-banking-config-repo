@@ -4,11 +4,6 @@ server:
 spring:
   cloud:
     gateway:
-      routes:
-        - id: auth-management
-          uri: lb://AUTH-MANAGEMENT
-          predicates:
-            - Path=/api/auth/register
       discovery:
         locator:
           enabled: true
